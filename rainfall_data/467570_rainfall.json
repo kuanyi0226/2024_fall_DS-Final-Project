@@ -1,0 +1,1362 @@
+[
+    {
+        "num": "195813",
+        "typhoon_name": "1958GRACE",
+        "typhoon_cht_name": "葛瑞絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1958-09-04 20:00:00",
+        "accu_value": "93.1",
+        "statistic_count": "85"
+    },
+    {
+        "num": "195807",
+        "typhoon_name": "1958WINNIE",
+        "typhoon_cht_name": "溫妮",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1958-07-17 08:00:00",
+        "accu_value": "22.4",
+        "statistic_count": "85"
+    },
+    {
+        "num": "195917",
+        "typhoon_name": "1959BABS",
+        "typhoon_cht_name": "巴布絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1959-10-09 20:00:00",
+        "accu_value": "13.4",
+        "statistic_count": "49"
+    },
+    {
+        "num": "195905",
+        "typhoon_name": "1959BILLIE",
+        "typhoon_cht_name": "畢莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1959-07-16 14:00:00",
+        "accu_value": "217.3",
+        "statistic_count": "91"
+    },
+    {
+        "num": "195921",
+        "typhoon_name": "1959FREDA",
+        "typhoon_cht_name": "芙瑞達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1959-11-19 20:00:00",
+        "accu_value": "67.6",
+        "statistic_count": "61"
+    },
+    {
+        "num": "195909",
+        "typhoon_name": "1959JOAN",
+        "typhoon_cht_name": "瓊安",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1959-08-31 20:00:00",
+        "accu_value": "59.1",
+        "statistic_count": "85"
+    },
+    {
+        "num": "195911",
+        "typhoon_name": "1959LOUISE",
+        "typhoon_cht_name": "魯依絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1959-09-05 20:00:00",
+        "accu_value": "30.5",
+        "statistic_count": "91"
+    },
+    {
+        "num": "196012",
+        "typhoon_name": "1960AGNES",
+        "typhoon_cht_name": "艾妮絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-08-15 08:00:00",
+        "accu_value": "42.2",
+        "statistic_count": "49"
+    },
+    {
+        "num": "196014",
+        "typhoon_name": "1960CARMEN",
+        "typhoon_cht_name": "卡門",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-08-21 02:00:00",
+        "accu_value": "102.9",
+        "statistic_count": "115"
+    },
+    {
+        "num": "196015",
+        "typhoon_name": "1960ELAINE",
+        "typhoon_cht_name": "艾琳",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-08-24 20:00:00",
+        "accu_value": "47.4",
+        "statistic_count": "103"
+    },
+    {
+        "num": "196018",
+        "typhoon_name": "1960GLORIA",
+        "typhoon_cht_name": "葛樂禮",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-09-03 20:00:00",
+        "accu_value": "0.2",
+        "statistic_count": "24"
+    },
+    {
+        "num": "196003",
+        "typhoon_name": "1960MARY",
+        "typhoon_cht_name": "瑪麗",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-06-11 08:00:00",
+        "accu_value": "92.6",
+        "statistic_count": "109"
+    },
+    {
+        "num": "196005",
+        "typhoon_name": "1960OLIVE",
+        "typhoon_cht_name": "歐莉芙",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-06-30 08:00:00",
+        "accu_value": "1.4",
+        "statistic_count": "97"
+    },
+    {
+        "num": "196006",
+        "typhoon_name": "1960POLLY",
+        "typhoon_cht_name": "玻莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-07-21 18:00:00",
+        "accu_value": "7.0",
+        "statistic_count": "70"
+    },
+    {
+        "num": "196006",
+        "typhoon_name": "1960POLLY",
+        "typhoon_cht_name": "玻莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-07-27 18:00:00",
+        "accu_value": "110.3",
+        "statistic_count": "131"
+    },
+    {
+        "num": "196008",
+        "typhoon_name": "1960SHIRLEY",
+        "typhoon_cht_name": "雪莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-08-02 14:00:00",
+        "accu_value": "250.7",
+        "statistic_count": "91"
+    },
+    {
+        "num": "196009",
+        "typhoon_name": "1960TRIX",
+        "typhoon_cht_name": "崔絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1960-08-09 08:00:00",
+        "accu_value": "307.6",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196103",
+        "typhoon_name": "1961ALICE",
+        "typhoon_cht_name": "艾麗絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-05-21 07:00:00",
+        "accu_value": "12.5",
+        "statistic_count": "38"
+    },
+    {
+        "num": "196104",
+        "typhoon_name": "1961BETTY",
+        "typhoon_cht_name": "貝蒂",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-05-27 20:00:00",
+        "accu_value": "31.4",
+        "statistic_count": "79"
+    },
+    {
+        "num": "196108",
+        "typhoon_name": "1961DORIS",
+        "typhoon_cht_name": "都麗絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-07-01 20:00:00",
+        "accu_value": "31.9",
+        "statistic_count": "37"
+    },
+    {
+        "num": "196109",
+        "typhoon_name": "1961ELSIE",
+        "typhoon_cht_name": "艾爾西",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-07-15 08:00:00",
+        "accu_value": "5.3",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196114",
+        "typhoon_name": "1961JUNE",
+        "typhoon_cht_name": "裘恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-08-08 08:00:00",
+        "accu_value": "4.9",
+        "statistic_count": "85"
+    },
+    {
+        "num": "196116",
+        "typhoon_name": "1961LORNA",
+        "typhoon_cht_name": "勞娜",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-08-26 08:00:00",
+        "accu_value": "4.8",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196118",
+        "typhoon_name": "1961NANCY",
+        "typhoon_cht_name": "南施",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-09-15 18:00:00",
+        "accu_value": "9.0",
+        "statistic_count": "48"
+    },
+    {
+        "num": "196120",
+        "typhoon_name": "1961PAMELA",
+        "typhoon_cht_name": "波密拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-09-12 20:00:00",
+        "accu_value": "132.9",
+        "statistic_count": "37"
+    },
+    {
+        "num": "196122",
+        "typhoon_name": "1961SALLY",
+        "typhoon_cht_name": "沙莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-09-29 08:00:00",
+        "accu_value": "11.7",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196123",
+        "typhoon_name": "1961TILDA",
+        "typhoon_cht_name": "蒂達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1961-10-04 18:00:00",
+        "accu_value": "6.3",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196216",
+        "typhoon_name": "1962AMY",
+        "typhoon_cht_name": "愛美",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1962-09-06 17:00:00",
+        "accu_value": "58.9",
+        "statistic_count": "124"
+    },
+    {
+        "num": "196219",
+        "typhoon_name": "1962DINAH",
+        "typhoon_cht_name": "黛納",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1962-10-03 20:00:00",
+        "accu_value": "47.4",
+        "statistic_count": "67"
+    },
+    {
+        "num": "196205",
+        "typhoon_name": "1962KATE",
+        "typhoon_cht_name": "凱蒂",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1962-07-24 05:00:00",
+        "accu_value": "213.5",
+        "statistic_count": "109"
+    },
+    {
+        "num": "196209",
+        "typhoon_name": "1962OPAL",
+        "typhoon_cht_name": "歐珀",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1962-08-06 20:00:00",
+        "accu_value": "198.6",
+        "statistic_count": "85"
+    },
+    {
+        "num": "196215",
+        "typhoon_name": "1962WANDA",
+        "typhoon_cht_name": "萬達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1962-08-31 20:00:00",
+        "accu_value": "0.5",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196314",
+        "typhoon_name": "1963GLORIA",
+        "typhoon_cht_name": "葛樂禮",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1963-09-12 08:00:00",
+        "accu_value": "572.1",
+        "statistic_count": "97"
+    },
+    {
+        "num": "196307",
+        "typhoon_name": "1963WENDY",
+        "typhoon_cht_name": "范迪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1963-07-17 08:00:00",
+        "accu_value": "23.2",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196412",
+        "typhoon_name": "1964IDA",
+        "typhoon_cht_name": "艾達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1964-08-08 08:00:00",
+        "accu_value": "3.9",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196414",
+        "typhoon_name": "1964KATHY",
+        "typhoon_cht_name": "凱西",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1964-08-20 18:00:00",
+        "accu_value": "160.1",
+        "statistic_count": "84"
+    },
+    {
+        "num": "196416",
+        "typhoon_name": "1964MARIE",
+        "typhoon_cht_name": "梅瑞",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1964-08-20 18:00:00",
+        "accu_value": "160.1",
+        "statistic_count": "84"
+    },
+    {
+        "num": "196418",
+        "typhoon_name": "1964RUBY",
+        "typhoon_cht_name": "魯碧",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1964-09-04 18:00:00",
+        "accu_value": "0.2",
+        "statistic_count": "48"
+    },
+    {
+        "num": "196420",
+        "typhoon_name": "1964TILDA",
+        "typhoon_cht_name": "蒂達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1964-09-15 20:00:00",
+        "accu_value": "1.2",
+        "statistic_count": "37"
+    },
+    {
+        "num": "196402",
+        "typhoon_name": "1964VIOLA",
+        "typhoon_cht_name": "衛歐拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1964-05-28 06:00:00",
+        "accu_value": "0.1",
+        "statistic_count": "30"
+    },
+    {
+        "num": "196510",
+        "typhoon_name": "1965DINAH",
+        "typhoon_cht_name": "黛納",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1965-06-19 08:00:00",
+        "accu_value": "16.1",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196514",
+        "typhoon_name": "1965HARRIET",
+        "typhoon_cht_name": "哈莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1965-07-27 08:00:00",
+        "accu_value": "4.1",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196519",
+        "typhoon_name": "1965MARY",
+        "typhoon_cht_name": "瑪麗",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1965-08-19 20:00:00",
+        "accu_value": "126.8",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196615",
+        "typhoon_name": "1966ALICE",
+        "typhoon_cht_name": "艾麗絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1966-09-03 20:00:00",
+        "accu_value": "32.5",
+        "statistic_count": "49"
+    },
+    {
+        "num": "196617",
+        "typhoon_name": "1966CORA",
+        "typhoon_cht_name": "寇拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1966-09-07 08:00:00",
+        "accu_value": "57.6",
+        "statistic_count": "85"
+    },
+    {
+        "num": "196619",
+        "typhoon_name": "1966ELSIE",
+        "typhoon_cht_name": "艾爾西",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1966-09-17 02:00:00",
+        "accu_value": "43.5",
+        "statistic_count": "61"
+    },
+    {
+        "num": "196622",
+        "typhoon_name": "1966HELEN",
+        "typhoon_cht_name": "海倫",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1966-09-22 23:00:00",
+        "accu_value": "27.5",
+        "statistic_count": "47"
+    },
+    {
+        "num": "196603",
+        "typhoon_name": "1966JUDY",
+        "typhoon_cht_name": "裘迪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1966-05-31 08:00:00",
+        "accu_value": "21.5",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196611",
+        "typhoon_name": "1966SUSAN",
+        "typhoon_cht_name": "蘇珊",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1966-08-17 18:00:00",
+        "accu_value": "136.7",
+        "statistic_count": "66"
+    },
+    {
+        "num": "196612",
+        "typhoon_name": "1966TESS",
+        "typhoon_cht_name": "蒂絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1966-08-17 08:00:00",
+        "accu_value": "134.7",
+        "statistic_count": "67"
+    },
+    {
+        "num": "196729",
+        "typhoon_name": "1967CARLA",
+        "typhoon_cht_name": "解拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1967-10-18 20:00:00",
+        "accu_value": "57.5",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196708",
+        "typhoon_name": "1967CLARA",
+        "typhoon_cht_name": "葛萊拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1967-07-12 08:00:00",
+        "accu_value": "46.2",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196730",
+        "typhoon_name": "1967DINAH",
+        "typhoon_cht_name": "黛納",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1967-10-26 14:00:00",
+        "accu_value": "20.2",
+        "statistic_count": "43"
+    },
+    {
+        "num": "196733",
+        "typhoon_name": "1967GILDA",
+        "typhoon_cht_name": "吉達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1967-11-18 20:00:00",
+        "accu_value": "15.2",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196719",
+        "typhoon_name": "1967NORA",
+        "typhoon_cht_name": "娜拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1967-08-30 08:00:00",
+        "accu_value": "3.5",
+        "statistic_count": "37"
+    },
+    {
+        "num": "196817",
+        "typhoon_name": "1968ELAINE",
+        "typhoon_cht_name": "艾琳",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1968-10-01 08:00:00",
+        "accu_value": "24.3",
+        "statistic_count": "97"
+    },
+    {
+        "num": "196805",
+        "typhoon_name": "1968NADINE",
+        "typhoon_cht_name": "娜定",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1968-07-26 20:00:00",
+        "accu_value": "16.7",
+        "statistic_count": "97"
+    },
+    {
+        "num": "196805",
+        "typhoon_name": "1968NADINE",
+        "typhoon_cht_name": "娜定",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1968-07-28 20:00:00",
+        "accu_value": "2.4",
+        "statistic_count": "13"
+    },
+    {
+        "num": "196812",
+        "typhoon_name": "1968WENDY",
+        "typhoon_cht_name": "范迪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1968-09-07 20:00:00",
+        "accu_value": "1.1",
+        "statistic_count": "121"
+    },
+    {
+        "num": "196908",
+        "typhoon_name": "1969BETTY",
+        "typhoon_cht_name": "貝蒂",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1969-08-08 20:00:00",
+        "accu_value": "333.2",
+        "statistic_count": "37"
+    },
+    {
+        "num": "196911",
+        "typhoon_name": "1969ELSIE",
+        "typhoon_cht_name": "艾爾西",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1969-09-27 14:00:00",
+        "accu_value": "112.5",
+        "statistic_count": "49"
+    },
+    {
+        "num": "196912",
+        "typhoon_name": "1969FLOSSIE",
+        "typhoon_cht_name": "芙勞西",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1969-10-03 20:00:00",
+        "accu_value": "139.2",
+        "statistic_count": "73"
+    },
+    {
+        "num": "196905",
+        "typhoon_name": "1969VIOLA",
+        "typhoon_cht_name": "衛歐拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1969-07-28 20:00:00",
+        "accu_value": "3.8",
+        "statistic_count": "85"
+    },
+    {
+        "num": "197015",
+        "typhoon_name": "1970FRAN",
+        "typhoon_cht_name": "芙安",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1970-09-07 14:00:00",
+        "accu_value": "323.1",
+        "statistic_count": "31"
+    },
+    {
+        "num": "197002",
+        "typhoon_name": "1970OLGA",
+        "typhoon_cht_name": "歐加",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1970-07-03 20:00:00",
+        "accu_value": "7.5",
+        "statistic_count": "61"
+    },
+    {
+        "num": "197009",
+        "typhoon_name": "1970WILDA",
+        "typhoon_cht_name": "魏達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1970-08-12 08:00:00",
+        "accu_value": "90.8",
+        "statistic_count": "49"
+    },
+    {
+        "num": "197126",
+        "typhoon_name": "1971AGNES",
+        "typhoon_cht_name": "艾妮絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1971-09-19 14:00:00",
+        "accu_value": "152.8",
+        "statistic_count": "55"
+    },
+    {
+        "num": "197106",
+        "typhoon_name": "1971BABE",
+        "typhoon_cht_name": "寶佩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1971-05-06 08:00:00",
+        "accu_value": "9.6",
+        "statistic_count": "25"
+    },
+    {
+        "num": "197127",
+        "typhoon_name": "1971BESS",
+        "typhoon_cht_name": "貝絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1971-09-23 08:00:00",
+        "accu_value": "309.4",
+        "statistic_count": "61"
+    },
+    {
+        "num": "197118",
+        "typhoon_name": "1971NADINE",
+        "typhoon_cht_name": "娜定",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1971-07-26 20:00:00",
+        "accu_value": "8.5",
+        "statistic_count": "61"
+    },
+    {
+        "num": "197213",
+        "typhoon_name": "1972BETTY",
+        "typhoon_cht_name": "貝蒂",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1972-08-17 14:00:00",
+        "accu_value": "307.5",
+        "statistic_count": "67"
+    },
+    {
+        "num": "197207",
+        "typhoon_name": "1972RITA",
+        "typhoon_cht_name": "莉泰",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1972-07-24 18:00:00",
+        "accu_value": "52.9",
+        "statistic_count": "48"
+    },
+    {
+        "num": "197208",
+        "typhoon_name": "1972SUSAN",
+        "typhoon_cht_name": "蘇珊",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1972-07-13 08:00:00",
+        "accu_value": "62.1",
+        "statistic_count": "43"
+    },
+    {
+        "num": "197211",
+        "typhoon_name": "1972WINNIE",
+        "typhoon_cht_name": "溫妮",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1972-08-02 02:00:00",
+        "accu_value": "151.9",
+        "statistic_count": "19"
+    },
+    {
+        "num": "197311",
+        "typhoon_name": "1973JOAN",
+        "typhoon_cht_name": "瓊安",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1973-08-20 20:00:00",
+        "accu_value": "5.1",
+        "statistic_count": "25"
+    },
+    {
+        "num": "197315",
+        "typhoon_name": "1973NORA",
+        "typhoon_cht_name": "娜拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1973-10-10 14:00:00",
+        "accu_value": "29.1",
+        "statistic_count": "67"
+    },
+    {
+        "num": "197411",
+        "typhoon_name": "1974JEAN",
+        "typhoon_cht_name": "琴恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1974-07-19 20:00:00",
+        "accu_value": "166.9",
+        "statistic_count": "31"
+    },
+    {
+        "num": "197421",
+        "typhoon_name": "1974WENDY",
+        "typhoon_cht_name": "范迪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1974-09-29 08:00:00",
+        "accu_value": "10.1",
+        "statistic_count": "67"
+    },
+    {
+        "num": "197512",
+        "typhoon_name": "1975BETTY",
+        "typhoon_cht_name": "貝蒂",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1975-09-23 20:00:00",
+        "accu_value": "181.5",
+        "statistic_count": "61"
+    },
+    {
+        "num": "197503",
+        "typhoon_name": "1975NINA",
+        "typhoon_cht_name": "妮娜",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1975-08-04 02:00:00",
+        "accu_value": "223.8",
+        "statistic_count": "43"
+    },
+    {
+        "num": "197613",
+        "typhoon_name": "1976BILLIE",
+        "typhoon_cht_name": "畢莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1976-08-10 14:00:00",
+        "accu_value": "99.0",
+        "statistic_count": "43"
+    },
+    {
+        "num": "197607",
+        "typhoon_name": "1976RUBY",
+        "typhoon_cht_name": "魯碧",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1976-06-30 08:00:00",
+        "accu_value": "1.9",
+        "statistic_count": "67"
+    },
+    {
+        "num": "197707",
+        "typhoon_name": "1977AMY",
+        "typhoon_cht_name": "愛美",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1977-08-22 20:00:00",
+        "accu_value": "127.9",
+        "statistic_count": "97"
+    },
+    {
+        "num": "197702",
+        "typhoon_name": "1977RUTH",
+        "typhoon_cht_name": "魯絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1977-06-17 08:00:00",
+        "accu_value": "32.8",
+        "statistic_count": "43"
+    },
+    {
+        "num": "197704",
+        "typhoon_name": "1977THELMA",
+        "typhoon_cht_name": "賽洛瑪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1977-07-25 20:00:00",
+        "accu_value": "3.7",
+        "statistic_count": "73"
+    },
+    {
+        "num": "197705",
+        "typhoon_name": "1977VERA",
+        "typhoon_cht_name": "薇拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1977-08-01 14:00:00",
+        "accu_value": "255.7",
+        "statistic_count": "91"
+    },
+    {
+        "num": "197812",
+        "typhoon_name": "1978DELLA",
+        "typhoon_cht_name": "黛拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1978-08-13 14:00:00",
+        "accu_value": "29.2",
+        "statistic_count": "25"
+    },
+    {
+        "num": "197802",
+        "typhoon_name": "1978OLIVE",
+        "typhoon_cht_name": "歐莉芙",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1978-04-26 02:00:00",
+        "accu_value": "25.4",
+        "statistic_count": "37"
+    },
+    {
+        "num": "197823",
+        "typhoon_name": "1978ORA",
+        "typhoon_cht_name": "歐拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1978-10-14 08:00:00",
+        "accu_value": "120.8",
+        "statistic_count": "67"
+    },
+    {
+        "num": "197908",
+        "typhoon_name": "1979HOPE",
+        "typhoon_cht_name": "賀璞",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1979-08-02 14:00:00",
+        "accu_value": "0.8",
+        "statistic_count": "49"
+    },
+    {
+        "num": "197909",
+        "typhoon_name": "1979IRVING",
+        "typhoon_cht_name": "歐敏",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1979-08-16 02:00:00",
+        "accu_value": "104.8",
+        "statistic_count": "85"
+    },
+    {
+        "num": "197910",
+        "typhoon_name": "1979JUDY",
+        "typhoon_cht_name": "裘迪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1979-08-24 08:00:00",
+        "accu_value": "114.9",
+        "statistic_count": "55"
+    },
+    {
+        "num": "198007",
+        "typhoon_name": "1980IDA",
+        "typhoon_cht_name": "艾達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1980-07-11 14:00:00",
+        "accu_value": "1.6",
+        "statistic_count": "73"
+    },
+    {
+        "num": "198012",
+        "typhoon_name": "1980NORRIS",
+        "typhoon_cht_name": "諾瑞斯",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1980-08-28 14:00:00",
+        "accu_value": "72.3",
+        "statistic_count": "49"
+    },
+    {
+        "num": "198014",
+        "typhoon_name": "1980PERCY",
+        "typhoon_cht_name": "波西",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1980-09-19 02:00:00",
+        "accu_value": "72.9",
+        "statistic_count": "85"
+    },
+    {
+        "num": "198117",
+        "typhoon_name": "1981AGNES",
+        "typhoon_cht_name": "艾妮絲",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1981-08-31 14:00:00",
+        "accu_value": "84.8",
+        "statistic_count": "49"
+    },
+    {
+        "num": "198119",
+        "typhoon_name": "1981CLARA",
+        "typhoon_cht_name": "葛萊拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1981-09-22 02:00:00",
+        "accu_value": "15.7",
+        "statistic_count": "67"
+    },
+    {
+        "num": "198104",
+        "typhoon_name": "1981IKE",
+        "typhoon_cht_name": "艾克",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1981-06-14 02:00:00",
+        "accu_value": "84.8",
+        "statistic_count": "37"
+    },
+    {
+        "num": "198125",
+        "typhoon_name": "1981IRMA",
+        "typhoon_cht_name": "伊瑪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1981-11-26 20:00:00",
+        "accu_value": "4.2",
+        "statistic_count": "37"
+    },
+    {
+        "num": "198105",
+        "typhoon_name": "1981JUNE",
+        "typhoon_cht_name": "裘恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1981-06-21 08:00:00",
+        "accu_value": "68.3",
+        "statistic_count": "67"
+    },
+    {
+        "num": "198108",
+        "typhoon_name": "1981MAURY",
+        "typhoon_cht_name": "莫瑞",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1981-07-20 08:00:00",
+        "accu_value": "385.3",
+        "statistic_count": "43"
+    },
+    {
+        "num": "198210",
+        "typhoon_name": "1982ANDY",
+        "typhoon_cht_name": "安迪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1982-07-30 08:00:00",
+        "accu_value": "24.8",
+        "statistic_count": "91"
+    },
+    {
+        "num": "198212",
+        "typhoon_name": "1982CECIL",
+        "typhoon_cht_name": "西仕",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1982-08-10 20:00:00",
+        "accu_value": "79.2",
+        "statistic_count": "109"
+    },
+    {
+        "num": "198213",
+        "typhoon_name": "1982DOT",
+        "typhoon_cht_name": "黛特",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1982-08-15 20:00:00",
+        "accu_value": "2.3",
+        "statistic_count": "61"
+    },
+    {
+        "num": "198220",
+        "typhoon_name": "1982KEN",
+        "typhoon_cht_name": "肯恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1982-09-22 20:00:00",
+        "accu_value": "10.0",
+        "statistic_count": "103"
+    },
+    {
+        "num": "198310",
+        "typhoon_name": "1983FORREST",
+        "typhoon_cht_name": "福萊斯",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1983-09-27 02:00:00",
+        "accu_value": "9.4",
+        "statistic_count": "79"
+    },
+    {
+        "num": "198304",
+        "typhoon_name": "1983WAYNE",
+        "typhoon_cht_name": "韋恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1983-07-25 20:00:00",
+        "accu_value": "24.2",
+        "statistic_count": "55"
+    },
+    {
+        "num": "198403",
+        "typhoon_name": "1984ALEX",
+        "typhoon_cht_name": "亞力士",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1984-07-04 08:00:00",
+        "accu_value": "42.0",
+        "statistic_count": "37"
+    },
+    {
+        "num": "198408",
+        "typhoon_name": "1984FREDA",
+        "typhoon_cht_name": "芙瑞達",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1984-08-08 08:00:00",
+        "accu_value": "176.6",
+        "statistic_count": "43"
+    },
+    {
+        "num": "198410",
+        "typhoon_name": "1984HOLLY",
+        "typhoon_cht_name": "郝麗",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1984-08-19 20:00:00",
+        "accu_value": "35.2",
+        "statistic_count": "55"
+    },
+    {
+        "num": "198412",
+        "typhoon_name": "1984JUNE",
+        "typhoon_cht_name": "裘恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1984-08-31 02:00:00",
+        "accu_value": "19.3",
+        "statistic_count": "61"
+    },
+    {
+        "num": "198402",
+        "typhoon_name": "1984WYNNE",
+        "typhoon_cht_name": "魏恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1984-06-24 14:00:00",
+        "accu_value": "1.0",
+        "statistic_count": "73"
+    },
+    {
+        "num": "198519",
+        "typhoon_name": "1985BRENDA",
+        "typhoon_cht_name": "白蘭黛",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1985-10-05 02:00:00",
+        "accu_value": "21.4",
+        "statistic_count": "61"
+    },
+    {
+        "num": "198506",
+        "typhoon_name": "1985JEFF",
+        "typhoon_cht_name": "傑夫",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1985-07-30 20:00:00",
+        "accu_value": "40.3",
+        "statistic_count": "61"
+    },
+    {
+        "num": "198510",
+        "typhoon_name": "1985NELSON",
+        "typhoon_cht_name": "尼爾森",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1985-08-24 02:00:00",
+        "accu_value": "248.6",
+        "statistic_count": "85"
+    },
+    {
+        "num": "198516",
+        "typhoon_name": "1985VAL",
+        "typhoon_cht_name": "衛奧",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1985-09-17 20:00:00",
+        "accu_value": "11.3",
+        "statistic_count": "55"
+    },
+    {
+        "num": "198613",
+        "typhoon_name": "1986ABBY",
+        "typhoon_cht_name": "艾貝",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1986-09-20 14:00:00",
+        "accu_value": "247.0",
+        "statistic_count": "103"
+    },
+    {
+        "num": "198605",
+        "typhoon_name": "1986NANCY",
+        "typhoon_cht_name": "南施",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1986-06-24 14:00:00",
+        "accu_value": "93.3",
+        "statistic_count": "49"
+    },
+    {
+        "num": "198607",
+        "typhoon_name": "1986PEGGY",
+        "typhoon_cht_name": "佩姬",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1986-07-11 14:00:00",
+        "accu_value": "0.8",
+        "statistic_count": "103"
+    },
+    {
+        "num": "198612",
+        "typhoon_name": "1986WAYNE",
+        "typhoon_cht_name": "韋恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1986-08-23 14:00:00",
+        "accu_value": "118.3",
+        "statistic_count": "67"
+    },
+    {
+        "num": "198612",
+        "typhoon_name": "1986WAYNE",
+        "typhoon_cht_name": "韋恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1986-08-25 02:00:00",
+        "accu_value": "95.1",
+        "statistic_count": "19"
+    },
+    {
+        "num": "198708",
+        "typhoon_name": "1987ALEX",
+        "typhoon_cht_name": "亞力士",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1987-07-27 20:00:00",
+        "accu_value": "66.4",
+        "statistic_count": "55"
+    },
+    {
+        "num": "198714",
+        "typhoon_name": "1987GERALD",
+        "typhoon_cht_name": "傑魯得",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1987-09-11 02:00:00",
+        "accu_value": "23.4",
+        "statistic_count": "85"
+    },
+    {
+        "num": "198720",
+        "typhoon_name": "1987LYNN",
+        "typhoon_cht_name": "琳恩",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1987-10-27 08:00:00",
+        "accu_value": "87.2",
+        "statistic_count": "115"
+    },
+    {
+        "num": "198705",
+        "typhoon_name": "1987THELMA",
+        "typhoon_cht_name": "賽洛瑪",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1987-07-15 02:00:00",
+        "accu_value": "6.4",
+        "statistic_count": "91"
+    },
+    {
+        "num": "198706",
+        "typhoon_name": "1987VERNON",
+        "typhoon_cht_name": "費南",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1987-07-22 02:00:00",
+        "accu_value": "38.0",
+        "statistic_count": "61"
+    },
+    {
+        "num": "198802",
+        "typhoon_name": "1988SUSAN",
+        "typhoon_cht_name": "蘇珊",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1988-06-02 20:00:00",
+        "accu_value": "49.7",
+        "statistic_count": "49"
+    },
+    {
+        "num": "198805",
+        "typhoon_name": "1988WARREN",
+        "typhoon_cht_name": "華倫",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1988-07-19 20:00:00",
+        "accu_value": "46.6",
+        "statistic_count": "61"
+    },
+    {
+        "num": "198919",
+        "typhoon_name": "1989SARAH",
+        "typhoon_cht_name": "莎拉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1989-09-13 20:00:00",
+        "accu_value": "192.8",
+        "statistic_count": "133"
+    },
+    {
+        "num": "199014",
+        "typhoon_name": "1990ABE",
+        "typhoon_cht_name": "亞伯",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1990-08-31 08:00:00",
+        "accu_value": "79.3",
+        "statistic_count": "49"
+    },
+    {
+        "num": "199017",
+        "typhoon_name": "1990DOT",
+        "typhoon_cht_name": "黛特",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1990-09-08 20:00:00",
+        "accu_value": "53.7",
+        "statistic_count": "61"
+    },
+    {
+        "num": "199003",
+        "typhoon_name": "1990MARIAN",
+        "typhoon_cht_name": "瑪麗安",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1990-05-19 14:00:00",
+        "accu_value": "33.2",
+        "statistic_count": "31"
+    },
+    {
+        "num": "199005",
+        "typhoon_name": "1990OFELIA",
+        "typhoon_cht_name": "歐菲莉",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1990-06-24 14:00:00",
+        "accu_value": "73.9",
+        "statistic_count": "73"
+    },
+    {
+        "num": "199006",
+        "typhoon_name": "1990PERCY",
+        "typhoon_cht_name": "波西",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1990-06-30 08:00:00",
+        "accu_value": "83.2",
+        "statistic_count": "91"
+    },
+    {
+        "num": "199007",
+        "typhoon_name": "1990ROBYN",
+        "typhoon_cht_name": "蘿繽",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1990-07-10 20:00:00",
+        "accu_value": "86.6",
+        "statistic_count": "37"
+    },
+    {
+        "num": "199012",
+        "typhoon_name": "1990YANCY",
+        "typhoon_cht_name": "楊希",
+        "stno": "467570",
+        "stntype": "CWA",
+        "accu_end_time": "1990-08-20 14:00:00",
+        "accu_value": "243.6",
+        "statistic_count": "79"
+    }
+]

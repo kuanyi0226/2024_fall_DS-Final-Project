@@ -1,0 +1,1152 @@
+[
+    {
+        "num": "200208",
+        "typhoon_name": "2002NAKRI",
+        "typhoon_cht_name": "娜克莉",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2002-07-10 23:00:00",
+        "accu_value": "85.5",
+        "statistic_count": "43"
+    },
+    {
+        "num": "200205",
+        "typhoon_name": "2002RAMMASUN",
+        "typhoon_cht_name": "雷馬遜",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2002-07-04 17:00:00",
+        "accu_value": "133.0",
+        "statistic_count": "52"
+    },
+    {
+        "num": "200216",
+        "typhoon_name": "2002SINLAKU",
+        "typhoon_cht_name": "辛樂克",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2002-09-08 05:00:00",
+        "accu_value": "85.1",
+        "statistic_count": "97"
+    },
+    {
+        "num": "200313",
+        "typhoon_name": "2003DUJUAN",
+        "typhoon_cht_name": "杜鵑",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2003-09-02 17:00:00",
+        "accu_value": "60.0",
+        "statistic_count": "55"
+    },
+    {
+        "num": "200319",
+        "typhoon_name": "2003MELOR",
+        "typhoon_cht_name": "米勒",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2003-11-03 23:00:00",
+        "accu_value": "0.1",
+        "statistic_count": "43"
+    },
+    {
+        "num": "200309",
+        "typhoon_name": "2003MORAKOT",
+        "typhoon_cht_name": "莫拉克",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2003-08-04 23:00:00",
+        "accu_value": "4.3",
+        "statistic_count": "55"
+    },
+    {
+        "num": "200306",
+        "typhoon_name": "2003SOUDELOR",
+        "typhoon_cht_name": "蘇迪勒",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2003-06-18 17:00:00",
+        "accu_value": "26.3",
+        "statistic_count": "52"
+    },
+    {
+        "num": "200311",
+        "typhoon_name": "2003VAMCO",
+        "typhoon_cht_name": "梵高",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2003-08-20 11:00:00",
+        "accu_value": "20.5",
+        "statistic_count": "25"
+    },
+    {
+        "num": "200417",
+        "typhoon_name": "2004AERE",
+        "typhoon_cht_name": "艾利",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-08-26 11:00:00",
+        "accu_value": "429.0",
+        "statistic_count": "82"
+    },
+    {
+        "num": "200404",
+        "typhoon_name": "2004CONSON",
+        "typhoon_cht_name": "康森",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-06-09 23:00:00",
+        "accu_value": "3.6",
+        "statistic_count": "55"
+    },
+    {
+        "num": "200420",
+        "typhoon_name": "2004HAIMA",
+        "typhoon_cht_name": "海馬",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-09-13 08:00:00",
+        "accu_value": "69.9",
+        "statistic_count": "34"
+    },
+    {
+        "num": "200421",
+        "typhoon_name": "2004MEARI",
+        "typhoon_cht_name": "米雷",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-09-27 14:00:00",
+        "accu_value": "15.7",
+        "statistic_count": "31"
+    },
+    {
+        "num": "200407",
+        "typhoon_name": "2004MINDULLE",
+        "typhoon_cht_name": "敏督利",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-07-03 11:00:00",
+        "accu_value": "110.1",
+        "statistic_count": "115"
+    },
+    {
+        "num": "200427",
+        "typhoon_name": "2004NANMADOL",
+        "typhoon_cht_name": "南瑪都",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-12-04 14:00:00",
+        "accu_value": "139.8",
+        "statistic_count": "37"
+    },
+    {
+        "num": "200424",
+        "typhoon_name": "2004NOCK-TEN",
+        "typhoon_cht_name": "納坦",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-10-26 02:00:00",
+        "accu_value": "166.6",
+        "statistic_count": "55"
+    },
+    {
+        "num": "200413",
+        "typhoon_name": "2004RANANIM",
+        "typhoon_cht_name": "蘭寧",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2004-08-13 02:00:00",
+        "accu_value": "92.8",
+        "statistic_count": "52"
+    },
+    {
+        "num": "200518",
+        "typhoon_name": "2005DAMREY",
+        "typhoon_cht_name": "丹瑞",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2005-09-23 08:00:00",
+        "accu_value": "107.6",
+        "statistic_count": "49"
+    },
+    {
+        "num": "200505",
+        "typhoon_name": "2005HAITANG",
+        "typhoon_cht_name": "海棠",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2005-07-20 02:00:00",
+        "accu_value": "193.4",
+        "statistic_count": "85"
+    },
+    {
+        "num": "200515",
+        "typhoon_name": "2005KHANUN",
+        "typhoon_cht_name": "卡努",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2005-09-11 14:00:00",
+        "accu_value": "31.3",
+        "statistic_count": "46"
+    },
+    {
+        "num": "200519",
+        "typhoon_name": "2005LONGWANG",
+        "typhoon_cht_name": "龍王",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2005-10-03 08:00:00",
+        "accu_value": "67.7",
+        "statistic_count": "61"
+    },
+    {
+        "num": "200509",
+        "typhoon_name": "2005MATSA",
+        "typhoon_cht_name": "馬莎",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2005-08-06 07:00:00",
+        "accu_value": "303.0",
+        "statistic_count": "72"
+    },
+    {
+        "num": "200510",
+        "typhoon_name": "2005SANVU",
+        "typhoon_cht_name": "珊瑚",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2005-08-13 20:00:00",
+        "accu_value": "9.7",
+        "statistic_count": "55"
+    },
+    {
+        "num": "200513",
+        "typhoon_name": "2005TALIM",
+        "typhoon_cht_name": "泰利",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2005-09-01 23:00:00",
+        "accu_value": "124.5",
+        "statistic_count": "64"
+    },
+    {
+        "num": "200604",
+        "typhoon_name": "2006BILIS",
+        "typhoon_cht_name": "碧利斯",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2006-07-15 02:00:00",
+        "accu_value": "70.3",
+        "statistic_count": "73"
+    },
+    {
+        "num": "200609",
+        "typhoon_name": "2006BOPHA",
+        "typhoon_cht_name": "寶發",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2006-08-09 14:00:00",
+        "accu_value": "32.2",
+        "statistic_count": "43"
+    },
+    {
+        "num": "200601",
+        "typhoon_name": "2006CHANCHU",
+        "typhoon_cht_name": "珍珠",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2006-05-18 17:00:00",
+        "accu_value": "62.5",
+        "statistic_count": "49"
+    },
+    {
+        "num": "200603",
+        "typhoon_name": "2006EWINIAR",
+        "typhoon_cht_name": "艾維尼",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2006-07-09 05:00:00",
+        "accu_value": "6.8",
+        "statistic_count": "31"
+    },
+    {
+        "num": "200605",
+        "typhoon_name": "2006KAEMI",
+        "typhoon_cht_name": "凱米",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2006-07-26 02:00:00",
+        "accu_value": "13.9",
+        "statistic_count": "61"
+    },
+    {
+        "num": "200608",
+        "typhoon_name": "2006SAOMAI",
+        "typhoon_cht_name": "桑美",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2006-08-10 23:00:00",
+        "accu_value": "92.5",
+        "statistic_count": "46"
+    },
+    {
+        "num": "200613",
+        "typhoon_name": "2006SHANSHAN",
+        "typhoon_cht_name": "珊珊",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2006-09-16 14:00:00",
+        "accu_value": "40.3",
+        "statistic_count": "49"
+    },
+    {
+        "num": "200715",
+        "typhoon_name": "2007KROSA",
+        "typhoon_cht_name": "柯羅莎",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2007-10-07 23:00:00",
+        "accu_value": "212.1",
+        "statistic_count": "79"
+    },
+    {
+        "num": "200723",
+        "typhoon_name": "2007MITAG",
+        "typhoon_cht_name": "米塔",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2007-11-27 11:00:00",
+        "accu_value": "73.1",
+        "statistic_count": "31"
+    },
+    {
+        "num": "200706",
+        "typhoon_name": "2007PABUK",
+        "typhoon_cht_name": "帕布",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2007-08-08 14:00:00",
+        "accu_value": "57.2",
+        "statistic_count": "40"
+    },
+    {
+        "num": "200708",
+        "typhoon_name": "2007SEPAT",
+        "typhoon_cht_name": "聖帕",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2007-08-19 14:00:00",
+        "accu_value": "119.9",
+        "statistic_count": "79"
+    },
+    {
+        "num": "200712",
+        "typhoon_name": "2007WIPHA",
+        "typhoon_cht_name": "韋帕",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2007-09-19 08:00:00",
+        "accu_value": "151.7",
+        "statistic_count": "52"
+    },
+    {
+        "num": "200707",
+        "typhoon_name": "2007WUTIP",
+        "typhoon_cht_name": "梧提",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2007-08-09 11:00:00",
+        "accu_value": "3.4",
+        "statistic_count": "25"
+    },
+    {
+        "num": "200808",
+        "typhoon_name": "2008FUNG-WONG",
+        "typhoon_cht_name": "鳳凰",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2008-07-29 11:00:00",
+        "accu_value": "90.4",
+        "statistic_count": "73"
+    },
+    {
+        "num": "200814",
+        "typhoon_name": "2008HAGUPIT",
+        "typhoon_cht_name": "哈格比",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2008-09-23 08:00:00",
+        "accu_value": "1.1",
+        "statistic_count": "43"
+    },
+    {
+        "num": "200815",
+        "typhoon_name": "2008JANGMI",
+        "typhoon_cht_name": "薔密",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2008-09-29 23:00:00",
+        "accu_value": "296.5",
+        "statistic_count": "73"
+    },
+    {
+        "num": "200807",
+        "typhoon_name": "2008KALMAEGI",
+        "typhoon_cht_name": "卡玫基",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2008-07-18 23:00:00",
+        "accu_value": "62.5",
+        "statistic_count": "64"
+    },
+    {
+        "num": "200813",
+        "typhoon_name": "2008SINLAKU",
+        "typhoon_cht_name": "辛樂克",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2008-09-16 14:00:00",
+        "accu_value": "537.2",
+        "statistic_count": "127"
+    },
+    {
+        "num": "200903",
+        "typhoon_name": "2009LINFA",
+        "typhoon_cht_name": "蓮花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2009-06-22 08:00:00",
+        "accu_value": "0.2",
+        "statistic_count": "37"
+    },
+    {
+        "num": "200908",
+        "typhoon_name": "2009MORAKOT",
+        "typhoon_cht_name": "莫拉克",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2009-08-10 05:00:00",
+        "accu_value": "125.0",
+        "statistic_count": "106"
+    },
+    {
+        "num": "200917",
+        "typhoon_name": "2009PARMA",
+        "typhoon_cht_name": "芭瑪",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2009-10-06 17:00:00",
+        "accu_value": "97.6",
+        "statistic_count": "85"
+    },
+    {
+        "num": "201011",
+        "typhoon_name": "2010FANAPI",
+        "typhoon_cht_name": "凡那比",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2010-09-20 14:00:00",
+        "accu_value": "79.9",
+        "statistic_count": "64"
+    },
+    {
+        "num": "201013",
+        "typhoon_name": "2010MEGI",
+        "typhoon_cht_name": "梅姬",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2010-10-23 23:00:00",
+        "accu_value": "153.5",
+        "statistic_count": "70"
+    },
+    {
+        "num": "201010",
+        "typhoon_name": "2010MERANTI",
+        "typhoon_cht_name": "莫蘭蒂",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2010-09-10 11:00:00",
+        "accu_value": "2.0",
+        "statistic_count": "28"
+    },
+    {
+        "num": "201008",
+        "typhoon_name": "2010NAMTHEUN",
+        "typhoon_cht_name": "南修",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2010-08-31 20:00:00",
+        "accu_value": "43.0",
+        "statistic_count": "25"
+    },
+    {
+        "num": "201008",
+        "typhoon_name": "2010NAMTHEUN",
+        "typhoon_cht_name": "南修",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2010-08-31 19:15:00",
+        "accu_value": "38.5",
+        "statistic_count": "21"
+    },
+    {
+        "num": "201105",
+        "typhoon_name": "2011MEARI",
+        "typhoon_cht_name": "米雷",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2011-06-25 14:00:00",
+        "accu_value": "182.0",
+        "statistic_count": "40"
+    },
+    {
+        "num": "201109",
+        "typhoon_name": "2011MUIFA",
+        "typhoon_cht_name": "梅花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2011-08-06 11:00:00",
+        "accu_value": "22.7",
+        "statistic_count": "43"
+    },
+    {
+        "num": "201111",
+        "typhoon_name": "2011NANMADOL",
+        "typhoon_cht_name": "南瑪都",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2011-08-31 08:00:00",
+        "accu_value": "44.5",
+        "statistic_count": "100"
+    },
+    {
+        "num": "201102",
+        "typhoon_name": "2011SONGDA",
+        "typhoon_cht_name": "桑達",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2011-05-28 14:00:00",
+        "accu_value": "50.5",
+        "statistic_count": "37"
+    },
+    {
+        "num": "201211",
+        "typhoon_name": "2012HAIKUI",
+        "typhoon_cht_name": "海葵",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2012-08-07 17:00:00",
+        "accu_value": "4.0",
+        "statistic_count": "31"
+    },
+    {
+        "num": "201217",
+        "typhoon_name": "2012JELAWAT",
+        "typhoon_cht_name": "杰拉華",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2012-09-28 20:00:00",
+        "accu_value": "14.5",
+        "statistic_count": "43"
+    },
+    {
+        "num": "201209",
+        "typhoon_name": "2012SAOLA",
+        "typhoon_cht_name": "蘇拉",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2012-08-03 14:00:00",
+        "accu_value": "328.0",
+        "statistic_count": "91"
+    },
+    {
+        "num": "201205",
+        "typhoon_name": "2012TALIM",
+        "typhoon_cht_name": "泰利",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2012-06-21 05:00:00",
+        "accu_value": "40.5",
+        "statistic_count": "49"
+    },
+    {
+        "num": "201214",
+        "typhoon_name": "2012TEMBIN",
+        "typhoon_cht_name": "天秤",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2012-08-25 14:00:00",
+        "accu_value": "46.7",
+        "statistic_count": "97"
+    },
+    {
+        "num": "201214",
+        "typhoon_name": "2012TEMBIN",
+        "typhoon_cht_name": "天秤",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2012-08-28 23:00:00",
+        "accu_value": "35.0",
+        "statistic_count": "61"
+    },
+    {
+        "num": "201323",
+        "typhoon_name": "2013FITOW",
+        "typhoon_cht_name": "菲特",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2013-10-07 08:00:00",
+        "accu_value": "55.5",
+        "statistic_count": "58"
+    },
+    {
+        "num": "201315",
+        "typhoon_name": "2013KONG-REY",
+        "typhoon_cht_name": "康芮",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2013-08-29 20:00:00",
+        "accu_value": "56.5",
+        "statistic_count": "58"
+    },
+    {
+        "num": "201307",
+        "typhoon_name": "2013SOULIK",
+        "typhoon_cht_name": "蘇力",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2013-07-13 23:00:00",
+        "accu_value": "102.0",
+        "statistic_count": "64"
+    },
+    {
+        "num": "201312",
+        "typhoon_name": "2013TRAMI",
+        "typhoon_cht_name": "潭美",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2013-08-22 08:00:00",
+        "accu_value": "247.5",
+        "statistic_count": "46"
+    },
+    {
+        "num": "201319",
+        "typhoon_name": "2013USAGI",
+        "typhoon_cht_name": "天兔",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2013-09-22 14:00:00",
+        "accu_value": "87.0",
+        "statistic_count": "64"
+    },
+    {
+        "num": "201416",
+        "typhoon_name": "2014FUNG-WONG",
+        "typhoon_cht_name": "鳳凰",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2014-09-22 08:00:00",
+        "accu_value": "157.5",
+        "statistic_count": "73"
+    },
+    {
+        "num": "201407",
+        "typhoon_name": "2014HAGIBIS",
+        "typhoon_cht_name": "哈吉貝",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2014-06-15 17:00:00",
+        "accu_value": "2.0",
+        "statistic_count": "19"
+    },
+    {
+        "num": "201410",
+        "typhoon_name": "2014MATMO",
+        "typhoon_cht_name": "麥德姆",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2014-07-23 23:00:00",
+        "accu_value": "65.0",
+        "statistic_count": "55"
+    },
+    {
+        "num": "201509",
+        "typhoon_name": "2015CHAN-HOM",
+        "typhoon_cht_name": "昌鴻",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2015-07-11 11:00:00",
+        "accu_value": "93.5",
+        "statistic_count": "55"
+    },
+    {
+        "num": "201521",
+        "typhoon_name": "2015DUJUAN",
+        "typhoon_cht_name": "杜鵑",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2015-09-29 17:00:00",
+        "accu_value": "181.5",
+        "statistic_count": "58"
+    },
+    {
+        "num": "201515",
+        "typhoon_name": "2015GONI",
+        "typhoon_cht_name": "天鵝",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2015-08-23 20:00:00",
+        "accu_value": "19.5",
+        "statistic_count": "76"
+    },
+    {
+        "num": "201510",
+        "typhoon_name": "2015LINFA",
+        "typhoon_cht_name": "蓮花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2015-07-09 05:00:00",
+        "accu_value": "7.0",
+        "statistic_count": "70"
+    },
+    {
+        "num": "201510",
+        "typhoon_name": "2015LINFA",
+        "typhoon_cht_name": "蓮花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2015-07-09 02:30:00",
+        "accu_value": "7.0",
+        "statistic_count": "66"
+    },
+    {
+        "num": "201506",
+        "typhoon_name": "2015NOUL",
+        "typhoon_cht_name": "紅霞",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2015-05-11 20:00:00",
+        "accu_value": "1.0",
+        "statistic_count": "37"
+    },
+    {
+        "num": "201513",
+        "typhoon_name": "2015SOUDELOR",
+        "typhoon_cht_name": "蘇迪勒",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2015-08-09 08:00:00",
+        "accu_value": "260.5",
+        "statistic_count": "70"
+    },
+    {
+        "num": "201619",
+        "typhoon_name": "2016AERE",
+        "typhoon_cht_name": "艾利",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2016-10-06 14:00:00",
+        "accu_value": "13.2",
+        "statistic_count": "28"
+    },
+    {
+        "num": "201616",
+        "typhoon_name": "2016MALAKAS",
+        "typhoon_cht_name": "馬勒卡",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2016-09-18 08:00:00",
+        "accu_value": "87.5",
+        "statistic_count": "58"
+    },
+    {
+        "num": "201617",
+        "typhoon_name": "2016MEGI",
+        "typhoon_cht_name": "梅姬",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2016-09-28 17:00:00",
+        "accu_value": "148.5",
+        "statistic_count": "67"
+    },
+    {
+        "num": "201614",
+        "typhoon_name": "2016MERANTI",
+        "typhoon_cht_name": "莫蘭蒂",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2016-09-15 11:00:00",
+        "accu_value": "39.0",
+        "statistic_count": "61"
+    },
+    {
+        "num": "201601",
+        "typhoon_name": "2016NEPARTAK",
+        "typhoon_cht_name": "尼伯特",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2016-07-09 14:00:00",
+        "accu_value": "14.5",
+        "statistic_count": "73"
+    },
+    {
+        "num": "201710",
+        "typhoon_name": "2017HAITANG",
+        "typhoon_cht_name": "海棠",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2017-07-31 08:30:00",
+        "accu_value": "4.0",
+        "statistic_count": "21"
+    },
+    {
+        "num": "201713",
+        "typhoon_name": "2017HATO",
+        "typhoon_cht_name": "天鴿",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2017-08-22 17:30:00",
+        "accu_value": "1.0",
+        "statistic_count": "42"
+    },
+    {
+        "num": "201709",
+        "typhoon_name": "2017NESAT",
+        "typhoon_cht_name": "尼莎",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2017-07-30 10:15:00",
+        "accu_value": "35.0",
+        "statistic_count": "50"
+    },
+    {
+        "num": "201718",
+        "typhoon_name": "2017TALIM",
+        "typhoon_cht_name": "泰利",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2017-09-14 20:30:00",
+        "accu_value": "20.0",
+        "statistic_count": "54"
+    },
+    {
+        "num": "201822",
+        "typhoon_name": "2018MANGKHUT",
+        "typhoon_cht_name": "山竹",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2018-09-15 20:30:00",
+        "accu_value": "4.2",
+        "statistic_count": "33"
+    },
+    {
+        "num": "201808",
+        "typhoon_name": "2018MARIA",
+        "typhoon_cht_name": "瑪莉亞",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2018-07-11 14:30:00",
+        "accu_value": "97.5",
+        "statistic_count": "48"
+    },
+    {
+        "num": "201911",
+        "typhoon_name": "2019BAILU",
+        "typhoon_cht_name": "白鹿",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2019-08-25 11:30:00",
+        "accu_value": "12.5",
+        "statistic_count": "54"
+    },
+    {
+        "num": "201905",
+        "typhoon_name": "2019DANAS",
+        "typhoon_cht_name": "丹娜絲",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2019-07-18 17:30:00",
+        "accu_value": "26.5",
+        "statistic_count": "42"
+    },
+    {
+        "num": "201909",
+        "typhoon_name": "2019LEKIMA",
+        "typhoon_cht_name": "利奇馬",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2019-08-10 08:30:00",
+        "accu_value": "86.5",
+        "statistic_count": "63"
+    },
+    {
+        "num": "201918",
+        "typhoon_name": "2019MITAG",
+        "typhoon_cht_name": "米塔",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2019-10-01 11:30:00",
+        "accu_value": "58.0",
+        "statistic_count": "51"
+    },
+    {
+        "num": "202008",
+        "typhoon_name": "2020BAVI",
+        "typhoon_cht_name": "巴威",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2020-08-22 23:30:00",
+        "accu_value": "21.0",
+        "statistic_count": "13"
+    },
+    {
+        "num": "202004",
+        "typhoon_name": "2020HAGUPIT",
+        "typhoon_cht_name": "哈格比",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2020-08-03 23:30:00",
+        "accu_value": "113.5",
+        "statistic_count": "42"
+    },
+    {
+        "num": "202006",
+        "typhoon_name": "2020MEKKHALA",
+        "typhoon_cht_name": "米克拉",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2020-08-11 14:30:00",
+        "accu_value": "36.0",
+        "statistic_count": "28"
+    },
+    {
+        "num": "202001",
+        "typhoon_name": "2020VONGFONG",
+        "typhoon_cht_name": "黃蜂",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2020-05-17 08:30:00",
+        "accu_value": "18.0",
+        "statistic_count": "21"
+    },
+    {
+        "num": "202114",
+        "typhoon_name": "2021CHANTHU",
+        "typhoon_cht_name": "璨樹",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-09-13 02:30:00",
+        "accu_value": "63.5",
+        "statistic_count": "69"
+    },
+    {
+        "num": "202103",
+        "typhoon_name": "2021CHOI-WAN",
+        "typhoon_cht_name": "彩雲",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-06-04 20:30:00",
+        "accu_value": "157.0",
+        "statistic_count": "29"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-22 14:30:00",
+        "accu_value": "22.0",
+        "statistic_count": "4"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-22 20:30:00",
+        "accu_value": "22.0",
+        "statistic_count": "4"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-23 02:30:00",
+        "accu_value": "22.0",
+        "statistic_count": "4"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-23 08:30:00",
+        "accu_value": "22.0",
+        "statistic_count": "4"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-23 14:30:00",
+        "accu_value": "106.0",
+        "statistic_count": "28"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-23 20:30:00",
+        "accu_value": "106.0",
+        "statistic_count": "28"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-24 02:30:00",
+        "accu_value": "106.0",
+        "statistic_count": "28"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-24 08:30:00",
+        "accu_value": "106.0",
+        "statistic_count": "28"
+    },
+    {
+        "num": "202106",
+        "typhoon_name": "2021IN-FA",
+        "typhoon_cht_name": "烟花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-07-24 11:30:00",
+        "accu_value": "226.0",
+        "statistic_count": "63"
+    },
+    {
+        "num": "202118",
+        "typhoon_name": "2021KOMPASU",
+        "typhoon_cht_name": "圓規",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-10-12 08:30:00",
+        "accu_value": "117.0",
+        "statistic_count": "36"
+    },
+    {
+        "num": "202109",
+        "typhoon_name": "2021LUPIT",
+        "typhoon_cht_name": "盧碧",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-08-05 14:30:00",
+        "accu_value": "7.5",
+        "statistic_count": "10"
+    },
+    {
+        "num": "202109",
+        "typhoon_name": "2021LUPIT",
+        "typhoon_cht_name": "盧碧",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2021-08-05 17:30:00",
+        "accu_value": "8.5",
+        "statistic_count": "27"
+    },
+    {
+        "num": "202211",
+        "typhoon_name": "2022HINNAMNOR",
+        "typhoon_cht_name": "軒嵐諾",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-09-03 14:30:00",
+        "accu_value": "33.5",
+        "statistic_count": "16"
+    },
+    {
+        "num": "202211",
+        "typhoon_name": "2022HINNAMNOR",
+        "typhoon_cht_name": "軒嵐諾",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-09-03 20:30:00",
+        "accu_value": "33.5",
+        "statistic_count": "16"
+    },
+    {
+        "num": "202211",
+        "typhoon_name": "2022HINNAMNOR",
+        "typhoon_cht_name": "軒嵐諾",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-09-04 02:30:00",
+        "accu_value": "33.5",
+        "statistic_count": "16"
+    },
+    {
+        "num": "202211",
+        "typhoon_name": "2022HINNAMNOR",
+        "typhoon_cht_name": "軒嵐諾",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-09-04 08:30:00",
+        "accu_value": "33.5",
+        "statistic_count": "16"
+    },
+    {
+        "num": "202211",
+        "typhoon_name": "2022HINNAMNOR",
+        "typhoon_cht_name": "軒嵐諾",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-09-04 14:30:00",
+        "accu_value": "70.5",
+        "statistic_count": "40"
+    },
+    {
+        "num": "202211",
+        "typhoon_name": "2022HINNAMNOR",
+        "typhoon_cht_name": "軒嵐諾",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-09-04 20:30:00",
+        "accu_value": "101.0",
+        "statistic_count": "60"
+    },
+    {
+        "num": "202212",
+        "typhoon_name": "2022MUIFA",
+        "typhoon_cht_name": "梅花",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-09-13 17:30:00",
+        "accu_value": "102.5",
+        "statistic_count": "57"
+    },
+    {
+        "num": "202220",
+        "typhoon_name": "2022NESAT",
+        "typhoon_cht_name": "尼莎",
+        "stno": "466880",
+        "stntype": "CWA",
+        "accu_end_time": "2022-10-16 20:30:00",
+        "accu_value": "223.5",
+        "statistic_count": "29"
+    }
+]
