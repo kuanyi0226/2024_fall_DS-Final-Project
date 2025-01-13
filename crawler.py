@@ -1,7 +1,9 @@
+from datetime import datetime, timedelta
+import numpy as np
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait,Select
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException, JavascriptException
 import csv
@@ -698,6 +700,146 @@ def crawl_taipei_precipitation(start_year, end_year):
         # 關閉瀏覽器
         driver.quit()
 
+def crawl_taiwan_lastweek_precipitation(date):
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome(options=options)
+
+    try:
+        # 打開目標網站
+        url = "https://www.cwa.gov.tw/V8/C/D/DailyPrecipitation.html"
+        driver.get(url)
+        print("成功打開網站")
+
+        # 定義排除的測站 ID
+        exclude_stations = {"467620", "467990", "467110", "467350", "467300"}
+        all_data = []  # 用於存儲所有測站的數據矩陣
+        days_to_extract = 7  # 提取的天數
+
+        # 計算目標日期範圍
+        target_dates = []
+        for i in range(days_to_extract):
+            target_date = datetime.strptime(date, "%Y%m%d") - timedelta(days=i + 1)
+            target_dates.append((target_date.year, target_date.month, target_date.day))
+
+        # 獲取所有測站選單中的選項
+        try:
+            station_dropdown = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.ID, "SID"))
+            )
+            station_options = Select(station_dropdown).options
+        except Exception as e:
+            print(f"無法獲取測站選單: {e}")
+            driver.save_screenshot("station_dropdown_error.png")
+            return
+
+        for station_option in station_options:
+            station_id = station_option.get_attribute("value")
+            station_name = station_option.text
+
+            if station_id in exclude_stations:
+                print(f"跳過外島測站: {station_name} ({station_id})")
+                continue
+
+            try:
+                # 選擇測站
+                Select(station_dropdown).select_by_value(station_id)
+                print(f"成功選擇測站: {station_name} ({station_id})")
+                time.sleep(0.1)  # 等待測站數據加載
+
+                # 確保年份選單可見並選擇年份
+                try:
+                    year_dropdown = WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located((By.ID, "Year"))
+                    )
+                    target_year = int(date[:4])
+                    Select(year_dropdown).select_by_visible_text(str(target_year))
+                    print(f"成功選擇年份: {target_year}")
+                    time.sleep(2)  # 等待年份數據加載
+                except Exception as e:
+                    print(f"無法選擇年份: {e}")
+                    driver.save_screenshot("year_selection_error.png")
+                    continue
+
+                # 提取表格數據
+                table = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.CLASS_NAME, "table-striped"))
+                )
+                rows = table.find_elements(By.TAG_NAME, "tr")[1:-1]  # 排除表頭和總和值行
+                station_data = []
+
+                for year, month, day in target_dates:
+                    try:
+                        column_index = month  # 月份對應的列
+                        row_index = day - 1  # 日期對應的行 (0-based)
+
+                        # 確保行和列存在
+                        if row_index >= len(rows):
+                            print(f"日期 {day} 超出範圍，跳過。")
+                            station_data.append(-1)
+                            continue
+
+                        row = rows[row_index]
+                        cells = row.find_elements(By.TAG_NAME, "td")
+
+                        if column_index - 1 >= len(cells):
+                            print(f"月份 {month} 超出範圍，跳過。")
+                            station_data.append(-1)
+                            continue
+
+                        # 提取單元格數據
+                        cell = cells[column_index - 1]
+                        text = cell.text.strip()
+
+                        if text == "-":
+                            station_data.append(0)
+                        elif text == "T":
+                            station_data.append(0)
+                        elif text == "X":
+                            station_data.append(-1)
+                        else:
+                            try:
+                                station_data.append(float(text))
+                            except ValueError:
+                                station_data.append(-1)
+
+                    except Exception as e:
+                        print(f"提取日期 {year}-{month}-{day} 數據失敗: {e}")
+                        station_data.append(-1)
+
+                # 驗證提取的數據是否完整
+                if len(station_data) != days_to_extract:
+                    print(f"測站 {station_name} 數據不完整，跳過。")
+                    continue
+
+                all_data.append(station_data)
+                print(f"成功提取測站 {station_name} 的數據。")
+                print(f"測站 {station_name} 在目標 7 天的降水量: {station_data}")
+
+            except Exception as e:
+                print(f"提取測站 {station_name} 數據失敗: {e}")
+                driver.save_screenshot(f"{station_name}_error.png")
+                continue
+
+        # 計算每一天的平均降水量（排除值為 -1 的數據）
+        average_precipitation = []
+        for day_index in range(days_to_extract):
+            daily_values = [station[day_index] for station in all_data if station[day_index] != -1]
+            if daily_values:
+                day_average = sum(daily_values) / len(daily_values)
+            else:
+                day_average = 0
+            average_precipitation.append(day_average)
+
+        print("成功計算每一天的平均降水量")
+        #print(average_precipitation)
+        return average_precipitation[::-1]#invert，變回順向日期 
+
+    finally:
+        driver.quit()
+
 
 if __name__ == "__main__":
     #crawl the typhoon data for training
@@ -705,4 +847,7 @@ if __name__ == "__main__":
     #fix_typhoon()
     #crawl_taipei_temp(2015,2024)
     #crawl_taipei_precipitation(2015,2024)
+
+    # result = crawl_taiwan_lastweek_precipitation("20240108")
+    # print(result)
     print('crawler done')
