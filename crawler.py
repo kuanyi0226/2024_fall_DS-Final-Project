@@ -239,7 +239,6 @@ def crawl_all_wind_speed(): #path我先暫時不改，還不太確定程式狀�
         json.dump(all_data, f, ensure_ascii=False, indent=4)
     print(f"所有測站的資料已合併並保存到 {output_file}")
 
-
 def crawl_all_rainfall(): #path我先暫時不改，還不太確定程式狀況
     import requests
     import json
@@ -528,10 +527,182 @@ def crawl_taipei_temp(start_year, end_year):
         # 關閉瀏覽器
         driver.quit()
 
-# 如果直接執行此檔案，會執行爬蟲功能
+def crawl_taipei_precipitation(start_year, end_year):
+    # 設定 Selenium 的 WebDriver
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')  # 啟動無頭模式
+    options.add_argument('--disable-gpu')
+    options.add_argument('--no-sandbox')
+    driver = webdriver.Chrome(options=options)
+
+    try:
+        # 打開目標網站
+        try:
+            url = "https://codis.cwa.gov.tw/StationData"
+            driver.get(url)
+            print("成功進入網站")
+        except Exception as e:
+            print(f"無法打開網站：{e}")
+            driver.save_screenshot("error_open_website.png")
+            return
+
+        # 輸入站名並選擇
+        try:
+            input_box = WebDriverWait(driver, 20).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, 'input[list="station_name"]'))
+            )
+            input_box.send_keys("臺北 (466920)")  # 輸入站名
+            time.sleep(2)  # 等待下拉選單顯示
+            input_box.send_keys(Keys.RETURN)  # 模擬回車鍵選擇站名
+            print("成功輸入站名並選擇")
+        except TimeoutException:
+            print("無法加載站名站號輸入框")
+            driver.save_screenshot("error_input_box.png")
+            with open("error_page_source.html", "w", encoding="utf-8") as f:
+                f.write(driver.page_source)
+            return
+
+        # 點擊地圖上的紅色標籤
+        try:
+            WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.CLASS_NAME, "leaflet-marker-icon"))
+            )
+            driver.find_element(By.CLASS_NAME, "leaflet-marker-icon").click()
+            print("成功點擊地圖上的紅色標籤")
+        except TimeoutException:
+            print("無法點擊地圖上的紅色標籤")
+            driver.save_screenshot("error_map_marker.png")
+            return
+
+        # 點擊 "資料圖表展示"
+        try:
+            WebDriverWait(driver, 10).until(
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "button.show_stn_tool"))
+            )
+            driver.find_element(By.CSS_SELECTOR, "button.show_stn_tool").click()
+            print("成功點擊 '資料圖表展示'")
+        except TimeoutException:
+            print("無法點擊 '資料圖表展示'")
+            driver.save_screenshot("error_data_display.png")
+            with open("error_page_source.html", "w", encoding="utf-8") as f:
+                f.write(driver.page_source)
+            return
+
+
+        # 點擊 "單項逐日年報表"
+        try:
+            # 確保按鈕可見並可點擊
+            daily_report_button = WebDriverWait(driver, 15).until(
+                EC.element_to_be_clickable((By.XPATH, "//div[contains(text(),'單項逐日年報表')]"))
+            )
+            daily_report_button.click()
+            print("成功點擊 '單項逐日年報表'")
+        except TimeoutException:
+            print("無法點擊 '單項逐日年報表'")
+            driver.save_screenshot("error_daily_report.png")
+            with open("error_page_source.html", "w", encoding="utf-8") as f:
+                f.write(driver.page_source)
+            return
+
+        try:
+            # 等待觀測要素下拉選單加載
+            element_dropdown = WebDriverWait(driver, 15).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "select.form-control"))
+            )
+            driver.execute_script("arguments[0].scrollIntoView(true);", element_dropdown)  # 滾動到元素可見
+            time.sleep(1)  # 等待滾動完成
+
+            # 使用 JavaScript 選擇目標選項
+            driver.execute_script("""
+                let select = arguments[0];
+                Array.from(select.options).forEach(option => {
+                    if (option.text.includes('降水量(mm)')) {
+                        option.selected = true; // 選擇正確選項
+                        select.dispatchEvent(new Event('change')); // 觸發改變事件
+                    }
+                });
+            """, element_dropdown)
+
+            # 驗證選擇是否成功
+            selected_option = driver.execute_script("""
+                let select = arguments[0];
+                return select.options[select.selectedIndex].text; // 獲取當前選中的選項文字
+            """, element_dropdown)
+
+            if '降水量(mm)' in selected_option:
+                print(f"成功選擇 '降水量(mm)' -> {selected_option}")
+            else:
+                raise Exception(f"選擇失敗，當前選項為: {selected_option}")
+
+        except Exception as e:
+            print(f"無法選擇觀測要素: {e}")
+        finally:
+            # 無論成功或失敗都截圖
+            screenshot_file = "select_element_status.png"
+            driver.save_screenshot(screenshot_file)
+            print(f"觀測要素選擇狀態截圖已保存: {screenshot_file}")
+
+
+        # 創建 CSV 文件保存數據
+        output_dir = 'data'
+        os.makedirs(output_dir, exist_ok=True)
+        output_file = os.path.join(output_dir, 'taipei_temp_2015_2024.csv')
+
+        with open(output_file, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(["Year", "Date", "Precipitation(mm)"])
+
+            # 逐年爬取數據
+            for year in range(start_year, end_year + 1):
+                try:
+                    # 選擇年份
+                    year_input = WebDriverWait(driver, 10).until(
+                        EC.presence_of_element_located((By.CSS_SELECTOR, "input.vdatetime-input"))
+                    )
+                    driver.execute_script("arguments[0].scrollIntoView(true);", year_input)  # 滾動到元素可見
+                    year_input.clear()
+                    year_input.send_keys(str(year))
+                    year_input.send_keys(Keys.RETURN)
+                    time.sleep(2)  # 等待表格刷新
+                    print(f"成功選擇年份 {year}")
+
+                    # 提取表格數據
+                    table = WebDriverWait(driver, 20).until(
+                        EC.presence_of_element_located((By.CLASS_NAME, "table-responsive"))
+                    )
+                    rows = table.find_elements(By.TAG_NAME, "tr")
+
+                    # 檢查表格是否有數據
+                    if len(rows) <= 1:  # 只有表頭，沒有數據
+                        print(f"年份 {year} 無數據")
+                        continue
+
+                    for row in rows[1:]:  # 跳過表頭
+                        cells = row.find_elements(By.TAG_NAME, "td")
+                        if len(cells) >= 2:
+                            date = cells[0].text.strip()  # 日期
+                            temp_data = cells[1].text.strip().split("/")
+                            if len(temp_data) == 2:
+                                lowest_temp = temp_data[0].strip()  
+                                time_lst = temp_data[1].strip()  
+                                writer.writerow([year, date, lowest_temp, time_lst])
+                    print(f"成功爬取年份 {year} 的數據")
+                except TimeoutException as e:
+                    print(f"無法提取年份 {year} 的數據: {e}")
+                    driver.save_screenshot(f"error_year_{year}.png")
+                    continue
+
+        print(f"資料已成功儲存到 {output_file}")
+    
+    finally:
+        # 關閉瀏覽器
+        driver.quit()
+
+
 if __name__ == "__main__":
     #crawl the typhoon data for training
     #crawl_typhoon()
     #fix_typhoon()
     #crawl_taipei_temp(2015,2024)
+    #crawl_taipei_precipitation(2015,2024)
     print('crawler done')
