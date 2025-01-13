@@ -848,6 +848,6 @@ if __name__ == "__main__":
     #crawl_taipei_temp(2015,2024)
     #crawl_taipei_precipitation(2015,2024)
 
-    # result = crawl_taiwan_lastweek_precipitation("20240108")
-    # print(result)
+    result = crawl_taiwan_lastweek_precipitation("20240115")
+    print(result)
     print('crawler done')
