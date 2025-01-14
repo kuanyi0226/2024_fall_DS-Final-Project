@@ -1,14 +1,16 @@
 from datetime import datetime, timedelta
-import numpy as np
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait,Select
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException, JavascriptException
+from selenium.common.exceptions import TimeoutException
 import csv
 import os
 import time
+import pandas as pd
+
+VEGE_TYPE = {'甘藍':'LA1','蕹菜':'LF2'}
 
 def crawl_typhoon():
     # 檢查 CSV 是否存在
@@ -840,6 +842,114 @@ def crawl_taiwan_lastweek_precipitation(date):
     finally:
         driver.quit()
 
+# Convert "交易日期" column
+def convert_to_gregorian(date_str):
+    # Extract the 民國年 format (e.g., "交易日期為113/01/07")
+    parts = date_str.replace("交易日期為", "").split("/")
+    year = int(parts[0]) + 1911  # Convert 民國年 to Gregorian year
+    month = parts[1]
+    day = parts[2]
+    return f"{year}{month:0>2}{day:0>2}"
+
+def crawl_taiwan_lastweek_price(date, type='蕹菜'):
+    # 初始化 Chrome driver
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
+    options.add_argument("--no-sandbox")
+    driver = webdriver.Chrome(options=options)
+
+    try:
+        # 計算日期範圍
+        target_date = datetime.strptime(date, "%Y%m%d")
+        start_date = target_date - timedelta(days=7)
+        end_date = target_date - timedelta(days=1)
+        start_date_str = start_date.strftime("%Y-%m-%d")
+        end_date_str = end_date.strftime("%Y-%m-%d")
+
+        # 構造 URL
+        url = f"https://m.moa.gov.tw/Transaction/AgriculturalProduct/Index?ByKeyword={VEGE_TYPE[type]}&StartDate={start_date_str}&EndDate={end_date_str}"
+        driver.get(url)
+        print(url)
+
+        # 等待表格完全加載
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "table.table-hover tbody.w-100"))
+        )
+        print('成功爬取表格')
+
+        # 模擬滾動頁面
+        last_height = driver.execute_script("return document.body.scrollHeight")
+        while True:
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(2)  # 等待新內容加載
+            new_height = driver.execute_script("return document.body.scrollHeight")
+            if new_height == last_height:
+                break
+            last_height = new_height
+        print("頁面滾動完成")
+
+        # 抓取表格資料
+        tbody = driver.find_element(By.CSS_SELECTOR, "table.table-hover tbody.w-100")
+        rows = tbody.find_elements(By.CSS_SELECTOR, "tr.row.mx-0")
+        print(f"找到的行數: {len(rows)}")
+
+        # 初始化表格資料
+        table_data = []
+        for index, row in enumerate(rows):
+            try:
+                # 忽略 template row
+                if "LCGD_Template" in row.get_attribute("class"):
+                    continue
+                # 提取每行的所有 <td> 資料
+                cells = row.find_elements(By.TAG_NAME, "td")
+                #print(len(cells))
+                row_data = []
+                for cell in cells:
+                    # 如果有 `aria-label`，直接使用其值
+                    aria_label = cell.get_attribute("aria-label")
+                    if aria_label:
+                        row_data.append(aria_label.strip())
+                    else:
+                        # 嘗試直接抓取 <td> 的完整文字內容
+                        td_text = cell.text.strip()
+                        if td_text:
+                            # 去除 \n 及其後的內容
+                            row_data.append(td_text.split("\n")[0])
+                        else:
+                            print("no text in cell")
+                            row_data.append("")
+
+                if row_data:  # 確保資料非空
+                    table_data.append(row_data)
+            except Exception as e:
+                print(f"解析行出錯 (行號 {index}): {e}")
+
+        # 將資料轉換為 DataFrame
+        if table_data:
+            columns = ["交易日期", "類別", "名稱", "市場", "上價", "中價", "下價", "平均價", "交易量"]
+            df = pd.DataFrame(table_data, columns=columns[:len(table_data[0])])
+            df["交易日期"] = df["交易日期"].apply(convert_to_gregorian)
+            df = df.iloc[::-1].reset_index(drop=True)
+            print(df)
+
+            # 生成 1*7 陣列
+            prices = []
+            for single_date in (start_date + timedelta(days=i) for i in range(7)):
+                target_date_str = single_date.strftime("%Y%m%d")
+                row = df[df["交易日期"] == target_date_str]
+                if not row.empty:
+                    prices.append(float(row["平均價"].iloc[0]))
+                else:
+                    prices.append(-1)
+            print(prices)
+            return prices
+
+        else:
+            print("未找到有效表格資料。")
+
+    finally:
+        driver.quit()
 
 if __name__ == "__main__":
     #crawl the typhoon data for training
@@ -850,4 +960,6 @@ if __name__ == "__main__":
 
     # result = crawl_taiwan_lastweek_precipitation("20240108")
     # print(result)
+
+    crawl_taiwan_lastweek_price("20240108",'蕹菜')
     print('crawler done')
