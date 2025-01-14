@@ -178,27 +178,43 @@ class MainWindow(QWidget):
             price_diff['date'] = pd.to_datetime(price_diff['date'], format="%Y-%m-%d")
             price_diff['day_of_year'] = price_diff['date'].dt.dayofyear
 
-            # 過濾出所需的 7 天數據
-            filtered_price_diff = price_diff[(price_diff['date'] >= start_date) & (price_diff['date'] <= end_date)]
-            print("Filtered price_diff:")
-            print(filtered_price_diff)
+            # 處理降雨量數據 (固定7天範圍)
+            if len(self.precipitation) != 7:
+                raise ValueError("降雨量資料必須正好有7天的數據！")
 
-            # 確保篩選的數據長度為 7 天
-            if len(filtered_price_diff) != 7:
-                raise ValueError(f"合并后数据长度不够，实际长度为 {len(filtered_price_diff)}，需要 7 天的数据")
+            rain_data = pd.DataFrame({
+                'dayofyear': pd.date_range(start=start_date, end=end_date).day_of_year[:7],
+                'Precipitation': self.precipitation
+            })
 
-            # 提取相關數據
-            filtered_price_diff = filtered_price_diff[['price_diff']].fillna(method='ffill').fillna(method='bfill')
+            # 合併降雨量和價格數據
+            merged_data = pd.merge(rain_data, price_diff, left_on='dayofyear', right_on='day_of_year', how='outer')
+            merged_data = merged_data.sort_values('dayofyear').reset_index(drop=True)
+
+            # 填補缺失值
+            merged_data['price_diff'] = merged_data['price_diff'].fillna(method='ffill').fillna(method='bfill')
+            merged_data['Precipitation'] = merged_data['Precipitation'].fillna(0)
+
+            # 確保數據長度為 7 天
+            if len(merged_data) < 7:
+                raise ValueError(f"合并后数据长度不足，实际长度为 {len(merged_data)}，需要至少 7 天的数据")
 
             # 標準化數據
             scaler_price = MinMaxScaler()
             scaler_rain = MinMaxScaler()
-            price_diff_values = scaler_price.fit_transform(filtered_price_diff.values)
-            precipitation_values = scaler_rain.fit_transform(np.array(self.precipitation).reshape(-1, 1))
+            merged_data['price_diff'] = scaler_price.fit_transform(merged_data[['price_diff']])
+            merged_data['Precipitation'] = scaler_rain.fit_transform(merged_data[['Precipitation']])
 
-            # 構建輸入
-            inputs = np.hstack((precipitation_values, price_diff_values))
-            inputs = inputs.reshape(1, 7, -1)
+            # 創建序列數據
+            sequence_length = 7
+            features = []
+            for i in range(len(merged_data) - sequence_length + 1):
+                r_sequence = merged_data['Precipitation'].iloc[i:i + sequence_length].values
+                p_sequence = merged_data['price_diff'].iloc[i:i + sequence_length].values
+                features.append(np.stack([r_sequence, p_sequence], axis=1))
+
+            # 使用最後一個有效序列作為輸入
+            inputs = np.array(features[-1]).reshape(1, sequence_length, -1)
 
             # 預測
             prediction = model.predict(inputs)[0]
@@ -210,7 +226,6 @@ class MainWindow(QWidget):
             self.info_label.setText(f"預測結果：{prediction.tolist()}")
         except Exception as e:
             self.info_label.setText(f"預測失敗: {e}")
-
 
     def display_image(self, image_path):
         pixmap = QPixmap(image_path)
