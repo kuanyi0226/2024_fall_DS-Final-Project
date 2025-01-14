@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+import numpy as np
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -835,12 +836,50 @@ def crawl_taiwan_lastweek_precipitation(date):
                 day_average = 0
             average_precipitation.append(day_average)
 
-        print("成功計算每一天的平均降水量")
-        #print(average_precipitation)
+        print(average_precipitation[::-1])
         return average_precipitation[::-1]#invert，變回順向日期 
 
     finally:
         driver.quit()
+
+#插值 替換爬蟲下來的-1
+def interpolate_array(arr):
+    """
+    處理 array 中的 -1：
+    1. 優先進行線性插值，僅對 -1 兩側為非 -1 的情況處理。
+    2. 若無法插值，則檢查並直接填補鄰近值。
+    """
+    arr = np.array(arr, dtype=float)  # 確保是 numpy array 且數值型態
+    n = len(arr)
+
+    while -1 in arr:
+        updated = False
+
+        # 嘗試線性插值
+        for i in range(1, n - 1):
+            if arr[i] == -1 and arr[i - 1] != -1 and arr[i + 1] != -1:
+                arr[i] = (arr[i - 1] + arr[i + 1]) / 2
+                updated = True
+
+        # 如果有更新，跳過直接填補
+        if updated:
+            continue
+
+        # 無法插值時，填補鄰近值
+        for i in range(n):
+            if arr[i] == -1:
+                if i > 0 and arr[i - 1] != -1:  # 左側填補
+                    arr[i] = arr[i - 1]
+                    updated = True
+                elif i < n - 1 and arr[i + 1] != -1:  # 右側填補
+                    arr[i] = arr[i + 1]
+                    updated = True
+
+        # 若無法再更新，停止迴圈
+        if not updated:
+            break
+
+    return arr
 
 # Convert "交易日期" column
 def convert_to_gregorian(date_str):
@@ -942,7 +981,10 @@ def crawl_taiwan_lastweek_price(date, type='蕹菜'):
                     prices.append(float(row["平均價"].iloc[0]))
                 else:
                     prices.append(-1)
-            print(prices)
+            # remove -1
+            print(f"前一周菜價-原始:{prices}")
+            prices = interpolate_array(prices)
+            print(f"前一周菜價-內插:{prices}")
             return prices
 
         else:
@@ -958,8 +1000,7 @@ if __name__ == "__main__":
     #crawl_taipei_temp(2015,2024)
     #crawl_taipei_precipitation(2015,2024)
 
-    # result = crawl_taiwan_lastweek_precipitation("20240108")
-    # print(result)
+    #crawl_taiwan_lastweek_precipitation("20240108")
 
     crawl_taiwan_lastweek_price("20240108",'蕹菜')
     print('crawler done')
