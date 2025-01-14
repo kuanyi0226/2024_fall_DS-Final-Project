@@ -207,14 +207,12 @@ class MainWindow(QWidget):
 
             # 創建序列數據
             sequence_length = 7
-            features = []
-            for i in range(len(merged_data) - sequence_length + 1):
-                r_sequence = merged_data['Precipitation'].iloc[i:i + sequence_length].values
-                p_sequence = merged_data['price_diff'].iloc[i:i + sequence_length].values
-                features.append(np.stack([r_sequence, p_sequence], axis=1))
+            r_sequence = merged_data['Precipitation'].iloc[-sequence_length:].values
+            p_sequence = merged_data['price_diff'].iloc[-sequence_length:].values
+            features = np.stack([r_sequence, p_sequence], axis=1)
 
-            # 使用最後一個有效序列作為輸入
-            inputs = np.array(features[-1]).reshape(1, sequence_length, -1)
+            # 構建輸入
+            inputs = features.reshape(1, sequence_length, -1)
 
             # 預測
             prediction = model.predict(inputs)[0]
