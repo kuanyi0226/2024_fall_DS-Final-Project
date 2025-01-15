@@ -890,6 +890,21 @@ def convert_to_gregorian(date_str):
     day = parts[2]
     return f"{year}{month:0>2}{day:0>2}"
 
+def result(date):
+    start_date = pd.to_datetime(date, format='%Y%m%d')
+    end_date = start_date + pd.Timedelta(days=6)
+    file_path = './output/output_filled.csv'
+    df = pd.read_csv(file_path)
+    df['日期'] = pd.to_datetime(df['日期'])
+    filtered_df = df[(df['日期'] >= start_date) & (df['日期'] <= end_date)]
+    filtered_df = filtered_df.sort_values(by='日期')
+    all_dates = pd.date_range(start=start_date, end=end_date)
+    filtered_df = filtered_df.set_index('日期').reindex(all_dates).reset_index()
+    filtered_df.columns = ['date', 'price']
+    
+    return filtered_df
+
+
 def crawl_taiwan_lastweek_price(date, type='蕹菜'):
     # 初始化 Chrome driver
     options = webdriver.ChromeOptions()
@@ -988,7 +1003,7 @@ def crawl_taiwan_lastweek_price(date, type='蕹菜'):
             return prices
 
         else:
-            print("未找到有效表格資料。")
+            print("")
 
     finally:
         driver.quit()

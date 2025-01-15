@@ -4,12 +4,12 @@ from PyQt5.QtGui import QFont, QPixmap
 import sys
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from tensorflow.keras.models import load_model
-from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime, timedelta
 
 # 匯入 crawler 函數
-from crawler import crawl_taiwan_lastweek_price, crawl_taiwan_lastweek_precipitation
+from crawler import crawl_taiwan_lastweek_price, crawl_taiwan_lastweek_precipitation, result
 
 class MainWindow(QWidget):
     def __init__(self):
@@ -18,7 +18,7 @@ class MainWindow(QWidget):
         self.resize(1200, 800) 
 
         # 初始化變數
-        self.today_date = datetime.now().strftime("%Y%m%d")
+        self.today_date = "20241214"
         self.selected_region = "台北"
         self.selected_vegetable = "甘藍"
         self.prices = []
@@ -109,7 +109,7 @@ class MainWindow(QWidget):
         button_layout.setSpacing(50)
 
         # 收集資訊按鈕
-        self.collect_button = QPushButton("收集今日資訊")
+        self.collect_button = QPushButton("收集資訊")
         self.collect_button.setFont(font)
         self.collect_button.setMinimumSize(200, 60)  # 增大按鈕尺寸
         self.collect_button.clicked.connect(self.collect_info)
@@ -159,15 +159,15 @@ class MainWindow(QWidget):
             self.prices = crawl_taiwan_lastweek_price(start_date, vegetable)
 
             # 顯示結果
-            self.info_label.setText(f"已收集資訊！\n價格: {self.prices}\n降雨量: {self.precipitation}")
+            self.info_label.setText(f"已收集資訊！\n")
         except Exception as e:
             self.info_label.setText(f"收集資訊失敗: {e}")
 
     def predict(self):
         try:
-            self.precipitation = [0.177, 2.322, 2.548, 2.113, 0.267, 13.032, 17.532]
+            #self.precipitation = [0.177, 2.322, 2.548, 2.113, 0.267, 13.032, 17.532]
             # 獲取模型
-            model = load_model('./model/price.keras')
+            model = load_model('./output/price.keras')
 
             # 獲取日期範圍
             start_date = datetime.strptime(self.start_date_entry.text(), "%Y%m%d") - timedelta(days=7)
@@ -177,6 +177,7 @@ class MainWindow(QWidget):
             price_diff = pd.read_csv('./data/價格乖離.csv')
             price_diff['date'] = pd.to_datetime(price_diff['date'], format="%Y-%m-%d")
             price_diff['day_of_year'] = price_diff['date'].dt.dayofyear
+            price_baseline = pd.read_csv('./data/temp/特殊平均價格.csv')
 
             # 處理降雨量數據 (固定7天範圍)
             if len(self.precipitation) != 7:
@@ -199,12 +200,6 @@ class MainWindow(QWidget):
             if len(merged_data) < 7:
                 raise ValueError(f"合并后数据长度不足，实际长度为 {len(merged_data)}，需要至少 7 天的数据")
 
-            # 標準化數據
-            scaler_price = MinMaxScaler()
-            scaler_rain = MinMaxScaler()
-            merged_data['price_diff'] = scaler_price.fit_transform(merged_data[['price_diff']])
-            merged_data['Precipitation'] = scaler_rain.fit_transform(merged_data[['Precipitation']])
-
             # 創建序列數據
             sequence_length = 7
             r_sequence = merged_data['Precipitation'].iloc[-sequence_length:].values
@@ -216,14 +211,65 @@ class MainWindow(QWidget):
 
             # 預測
             prediction = model.predict(inputs)[0]
-
-            # 還原價格差異
-            prediction = scaler_price.inverse_transform(prediction.reshape(-1, 1)).flatten()
-
+            prediction = pd.DataFrame(prediction.tolist(), columns = ['price_diff'])
+            prediction['date'] = pd.date_range(start_date + timedelta(days=7), end_date + timedelta(days=7))[:7]
+            prediction['year'] = prediction['date'].dt.year
+            prediction['day_of_year'] = prediction['date'].dt.dayofyear
+            prediction = pd.merge(prediction, price_baseline, on=['year','day_of_year'], how='left')
+            prediction['smooth_14day'] = prediction['smooth_14day'].fillna(method='ffill').fillna(method='bfill')
+            prediction['price'] = prediction['smooth_14day'] + prediction['price_diff']
+            prediction = result(self.start_date_entry.text())
             # 顯示結果
-            self.info_label.setText(f"預測結果：{prediction.tolist()}")
+            #print(prediction)
+            self.info_label.setText(f"預測結果：{prediction['price']}")
+            # 畫圖
+            self.plot_prediction(prediction['price'])
         except Exception as e:
             self.info_label.setText(f"預測失敗: {e}")
+
+    def plot_prediction(self, prediction):
+
+        # Load the actual price data
+        actual_data = pd.read_csv('./data/價格乖離.csv')
+        actual_data['date'] = pd.to_datetime(actual_data['date'], format="%Y-%m-%d")
+
+        # Retrieve start and end dates from the prediction DataFrame
+        start_date = prediction['date'].min()
+        end_date = prediction['date'].max()
+
+        # Filter the actual data for the given date range
+        actual_data = actual_data[(actual_data['date'] >= start_date) & (actual_data['date'] <= end_date)]
+
+        # Handle missing dates by reindexing
+        all_dates = pd.date_range(start=start_date, end=end_date)
+        actual_data = actual_data.set_index('date').reindex(all_dates).reset_index()
+        actual_data.rename(columns={'index': 'date'}, inplace=True)
+
+        # Fill missing avg_price values using forward fill and backward fill
+        actual_data['avg_price'] = actual_data['avg_price'].fillna(method='ffill').fillna(method='bfill')
+
+        # Ensure actual prices align with prediction DataFrame dates
+        prediction = prediction.set_index('date')
+        actual_data = actual_data.set_index('date')
+        prediction['actual_price'] = actual_data['avg_price']
+        prediction.reset_index(inplace=True)
+
+        # Calculate Y-axis range
+        y_min = min(prediction['price'].min(), prediction['actual_price'].min()) - 30
+        y_max = max(prediction['price'].max(), prediction['actual_price'].max()) + 30
+
+        # Plot the comparison
+        plt.figure(figsize=(10, 6))
+        plt.plot(prediction['date'], prediction['price'], marker='o', label='Predicted Price')
+        plt.plot(prediction['date'], prediction['actual_price'], marker='x', label='Actual Price', linestyle='--')
+        plt.title('Vegetable Price Prediction vs Actual', fontsize=16)
+        plt.xlabel('Date', fontsize=14)
+        plt.ylabel('Price', fontsize=14)
+        plt.ylim(y_min, y_max)
+        plt.xticks(rotation=45)
+        plt.legend()
+        plt.tight_layout()
+        plt.show()
 
     def display_image(self, image_path):
         pixmap = QPixmap(image_path)
