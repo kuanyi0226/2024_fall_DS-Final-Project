@@ -1,0 +1,182 @@
+[
+    {
+        "num": "199812",
+        "typhoon_name": "1998BABS",
+        "typhoon_cht_name": "芭比絲",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1998-10-27 23:00:00",
+        "accu_value": "28.5",
+        "statistic_count": "52"
+    },
+    {
+        "num": "199801",
+        "typhoon_name": "1998NICHOLE",
+        "typhoon_cht_name": "妮蔻兒",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1998-07-10 08:00:00",
+        "accu_value": "138.0",
+        "statistic_count": "28"
+    },
+    {
+        "num": "199802",
+        "typhoon_name": "1998OTTO",
+        "typhoon_cht_name": "奧托",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1998-08-05 08:00:00",
+        "accu_value": "155.0",
+        "statistic_count": "49"
+    },
+    {
+        "num": "199809",
+        "typhoon_name": "1998YANNI",
+        "typhoon_cht_name": "楊妮",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1998-09-29 14:00:00",
+        "accu_value": "1.7",
+        "statistic_count": "40"
+    },
+    {
+        "num": "199810",
+        "typhoon_name": "1998ZEB",
+        "typhoon_cht_name": "瑞珀",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1998-10-17 05:00:00",
+        "accu_value": "72.0",
+        "statistic_count": "88"
+    },
+    {
+        "num": "199920",
+        "typhoon_name": "1999DAN",
+        "typhoon_cht_name": "丹恩",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1999-10-09 20:00:00",
+        "accu_value": "55.5",
+        "statistic_count": "127"
+    },
+    {
+        "num": "199906",
+        "typhoon_name": "1999MAGGIE",
+        "typhoon_cht_name": "瑪姬",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1999-06-06 20:00:00",
+        "accu_value": "2.9",
+        "statistic_count": "55"
+    },
+    {
+        "num": "199911",
+        "typhoon_name": "1999SAM",
+        "typhoon_cht_name": "山姆",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "1999-08-21 23:00:00",
+        "accu_value": "5.5",
+        "statistic_count": "52"
+    },
+    {
+        "num": "200010",
+        "typhoon_name": "2000BILIS",
+        "typhoon_cht_name": "碧利斯",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2000-08-23 20:00:00",
+        "accu_value": "256.0",
+        "statistic_count": "61"
+    },
+    {
+        "num": "200004",
+        "typhoon_name": "2000KAI-TAK",
+        "typhoon_cht_name": "啟德",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2000-07-10 02:00:00",
+        "accu_value": "55.0",
+        "statistic_count": "88"
+    },
+    {
+        "num": "200012",
+        "typhoon_name": "2000PRAPIROON",
+        "typhoon_cht_name": "巴比侖",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2000-08-30 14:00:00",
+        "accu_value": "4.2",
+        "statistic_count": "67"
+    },
+    {
+        "num": "200020",
+        "typhoon_name": "2000XANGSANE",
+        "typhoon_cht_name": "象神",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2000-11-01 20:00:00",
+        "accu_value": "96.0",
+        "statistic_count": "49"
+    },
+    {
+        "num": "200102",
+        "typhoon_name": "2001CHEBI",
+        "typhoon_cht_name": "奇比",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2001-06-24 08:00:00",
+        "accu_value": "204.0",
+        "statistic_count": "55"
+    },
+    {
+        "num": "200119",
+        "typhoon_name": "2001LEKIMA",
+        "typhoon_cht_name": "利奇馬",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2001-09-28 08:00:00",
+        "accu_value": "33.3",
+        "statistic_count": "109"
+    },
+    {
+        "num": "200116",
+        "typhoon_name": "2001NARI",
+        "typhoon_cht_name": "納莉",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2001-09-19 23:00:00",
+        "accu_value": "244.5",
+        "statistic_count": "154"
+    },
+    {
+        "num": "200108",
+        "typhoon_name": "2001TORAJI",
+        "typhoon_cht_name": "桃芝",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2001-07-31 14:00:00",
+        "accu_value": "24.6",
+        "statistic_count": "82"
+    },
+    {
+        "num": "200105",
+        "typhoon_name": "2001TRAMI",
+        "typhoon_cht_name": "潭美",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2001-07-11 20:00:00",
+        "accu_value": "15.0",
+        "statistic_count": "37"
+    },
+    {
+        "num": "200104",
+        "typhoon_name": "2001UTOR",
+        "typhoon_cht_name": "尤特",
+        "stno": "467411",
+        "stntype": "CWA",
+        "accu_end_time": "2001-07-05 23:00:00",
+        "accu_value": "0.2",
+        "statistic_count": "58"
+    }
+]
